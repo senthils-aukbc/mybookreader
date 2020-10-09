@@ -19,14 +19,14 @@
 
     <!-- Custom CSS overrides -->
     <!-- <link rel="stylesheet" href="css/BookReaderDemo.css"/> -->
-	<!-- <style> -->
-<!-- html, body { width: 100%; height: 100%; margin: 0; padding: 0; } -->
-<!-- #BookReader { width: 100%; height: 100%; } -->
-    <!-- </style> -->
+	<style>
+html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+#BookReader { width: 100%; height: 100%; }
+    </style>
 </head>
 <body>
   <div id="BookReader">
-      <br><h1>BookReader Demo</h1><br/>
+      Internet Archive BookReader Demo<br/>
       <noscript>
       <p>
           The BookReader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.  You can also try one of the <a href="https://archive.org/details/goodytwoshoes00newyiala"> other formats of the book</a>.
@@ -35,9 +35,10 @@
   </div>
 
 
-  <h2><a href="book1.html">A book containing multiple stories</a></h2>
-
-  <h2><a href="story1.html">A book containing a single story</a></h2>
-
+  <h1>A book containing multiple stories</h1>
+  <script type="text/javascript" src="BookReaderJSSimple.js"></script>
+  <script>
+  instantiateBookReader('#BookReader');
+  </script>
 </body>
 </html>
