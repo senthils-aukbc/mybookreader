@@ -31,10 +31,10 @@ function instantiateBookReader(selector, extraOptions) {
     ],
 
     // Book title and the URL used for the book title link
-    //bookTitle: 'BookReader Demo',
-    //bookUrl: '../index.html',
-    //bookUrlText: 'Back to Demos',
-    //bookUrlTitle: 'This is the book URL title',
+    bookTitle: 'BookReader Demo',
+    bookUrl: '../index.html',
+    bookUrlText: 'Back to list of books',
+    bookUrlTitle: 'This is the book URL title',
 
     // thumbnail is optional, but it is used in the info dialog
     //thumbnail: '//archive.org/download/BookReader/img/page014.jpg',
