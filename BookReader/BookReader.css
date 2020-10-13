@@ -195,11 +195,9 @@
 }
 
 .BRprogresspopup {
-  min-width: inherit;
   margin: 80px auto auto;
   position: relative;
-  max-width: 50%;
-  min-width: 300px;
+  width: 320px;
   background-color: white;
   font-size: 1.5em;
   padding: 20px;
@@ -1888,6 +1886,10 @@ i.BRicon {
 .BookReader .BRsearch-navigation .pagination a, .BRmobileMenu .BRsearch-navigation .pagination a, .BRfloat .BRsearch-navigation .pagination a {
   display: inline-block;
   vertical-align: middle;
+}
+.BookReader .BRsearch-navigation .pagination a[disabled], .BRmobileMenu .BRsearch-navigation .pagination a[disabled], .BRfloat .BRsearch-navigation .pagination a[disabled] {
+  opacity: 0.3;
+  cursor: default;
 }
 .BookReader .BRsearch-navigation .pagination a span, .BRmobileMenu .BRsearch-navigation .pagination a span, .BRfloat .BRsearch-navigation .pagination a span {
   width: 8px;

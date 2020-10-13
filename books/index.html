@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../../BookReader/BookReader.css"/>
     <script src="../../BookReader/BookReader.js"></script>
 
-	<style>
-html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
-#BookReader { width: 100%; height: 100%; }
-    </style>
+	<!-- <style> -->
+		<!-- html, body { width: 100%; height: 100%; margin: 0; padding: 0; } -->
+		<!-- #BookReader { width: 100%; height: 100%; } -->
+    <!-- </style> -->
 </head>
 <body>
   <div id="BookReader">
@@ -88,6 +88,12 @@ html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
 	enableMobileNav: false,
 	
     el: selector,
+	
+	showLogo: false,
+	
+	showToolbar: false,
+	
+	getEmbedCode: null,
 	
   };
   $.extend(options, extraOptions);
