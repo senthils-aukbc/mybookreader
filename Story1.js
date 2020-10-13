@@ -11,22 +11,41 @@ function instantiateBookReader(selector, extraOptions) {
     data: [
       [
 		//One set
-	    { width: 620, height: 848,
-          uri: '../books/hindi_36_0_25p.jpg' },
-        { width: 620, height: 848,
-          uri: '../books/hindi_36_1_25p.jpg' },
+	    //{ width: 620, height: 826,
+      //    uri: 'small(0).jpg' },
+        { width: 620, height: 826,
+          uri: 'books/small_rightS39CMK(1-4).jpg' },
       ],
       [
-        { width: 620, height: 848,
-          uri: '../books/hindi_36_2_25p.jpg' },
-        { width: 620, height: 848,
-          uri: '../books/hindi_36_3_25p.jpg' },
+        { width: 620, height: 826,
+          uri: 'books/small_leftS39CMK(2-3).jpg' },
+        { width: 620, height: 826,
+          uri: 'books/small_rightS39CMK(2-3).jpg' },
       ],
       [
-        { width: 620, height: 848,
-          uri: '../books/hindi_36_4_25p.jpg' },
-	    { width: 620, height: 848,
-          uri: '../books/hindi_36_0_25p.jpg' },
+        { width: 620, height: 826,
+          uri: 'books/small_leftS39CMK(1-4).jpg' },
+	    //{ width: 620, height: 826,
+      //    uri: 'small(0).jpg' },
+      ],
+      [
+      		//One set
+	    //{ width: 620, height: 826,
+      //    uri: 'small(0).jpg' },
+      { width: 620, height: 826,
+        uri: 'books/small_rightS47CMK(1-4).jpg' },
+    ],
+      [
+      { width: 620, height: 826,
+        uri: 'books/small_leftS47CMK(2-3).jpg' },
+      { width: 620, height: 826,
+        uri: 'books/small_rightS47CMK(2-3).jpg' },
+      ],
+      [
+      { width: 620, height: 826,
+        uri: 'books/small_leftS47CMK(1-4).jpg' },
+      //{ width: 620, height: 826,
+      //    uri: 'small(0).jpg' },
       ],
     ],
 
