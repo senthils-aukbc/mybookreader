@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Katha Jharna - 100 stories in Hindi</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- JS dependencies -->
     <script src="../../BookReader/jquery-1.10.1.js"></script>
@@ -14,78 +14,89 @@
     <script src="../../BookReader/jquery.colorbox-min.js"></script>
 
     <!-- BookReader and plugins -->
-    <link rel="stylesheet" href="../../BookReader/BookReader.css"/>
+    <link rel="stylesheet" href="../../BookReader/BookReader.css" />
     <script src="../../BookReader/BookReader.js"></script>
 
-	  <style>
-		  html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
-		  #BookReader { width: 100%; height: 98%; }
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #BookReader {
+        width: 100%;
+        height: 98%;
+      }
     </style>
-</head>
-<body>
-  <div id="BookReader">
-    Katha Jharna - 100 stories in Hindi<br/>
+  </head>
+  <body>
+    <div id="BookReader">
+      Katha Jharna - 100 stories in Hindi<br />
       <noscript>
-      <p>
-          The Book Reader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.
-      </p>
+        <p>
+          The Book Reader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that
+          it is enabled in the browser settings.
+        </p>
       </noscript>
-  </div>
+    </div>
 
-  <script type="text/javascript">
-  
-  function getQueryStringValue (key) {  
-	  return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
-  }
-  
-  console.log(getQueryStringValue("storyid"));
-  storyid = getQueryStringValue("storyid");
-  function instantiateBookReader(selector, extraOptions) {
-  selector = selector || '#BookReader';
-  extraOptions = extraOptions || {};
-  var options = {
-    data: [
-      [
-        { width: 620, height: 826,
-          uri: 'small(0).jpg' },
-	      { width: 620, height: 826,
-          uri: storyid + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826,
-          uri: storyid + '/small(2).jpg' },
-        { width: 620, height: 826,
-          uri: storyid + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826,
-          uri: storyid + '/small(4).jpg' },
-        { width: 620, height: 826,
-          uri: 'small(0).jpg' },
-      ],
-    ],
+    <script type="text/javascript">
+      function getQueryStringValue(key) {
+        return decodeURIComponent(
+          window.location.search.replace(
+            new RegExp(
+              "^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$",
+              "i"
+            ),
+            "$1"
+          )
+        );
+      }
 
-    // Override the path used to find UI images
-    imagesBaseURL: '../../BookReader/images/',
+      console.log(getQueryStringValue("storyid"));
+      storyid = getQueryStringValue("storyid");
+      function instantiateBookReader(selector, extraOptions) {
+        selector = selector || "#BookReader";
+        extraOptions = extraOptions || {};
+        var options = {
+          data: [
+            [
+              { width: 620, height: 826, uri: "small(0).jpg" },
+              { width: 620, height: 826, uri: storyid + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: storyid + "/small(2).jpg" },
+              { width: 620, height: 826, uri: storyid + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: storyid + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "small(0).jpg" },
+            ],
+          ],
 
-    ui: 'embed', // embed, full (responsive)
+          // Override the path used to find UI images
+          imagesBaseURL: "../../BookReader/images/",
 
-	enableMobileNav: false,
-	
-    el: selector,
-	
+          ui: "embed", // embed, full (responsive)
 
-  };
-  $.extend(options, extraOptions);
-  var br = new BookReader(options);
-  br.init();
-  }
+          enableMobileNav: false,
 
-  </script>
-  <script>
-  instantiateBookReader('#BookReader');
-  </script>
-    
-<footer>&copy; Copyright 2020. Rajalakshmi Srinivasan Memorial Foundation. <a href = "mailto: rsmf1944@gmail.com">Contact Us</a></footer>
-</body>
+          el: selector,
+        };
+        $.extend(options, extraOptions);
+        var br = new BookReader(options);
+        br.init();
+      }
+    </script>
+    <script>
+      instantiateBookReader("#BookReader");
+    </script>
+
+    <footer>
+      &copy; Copyright 2020. Rajalakshmi Srinivasan Memorial Foundation.
+      <a href="mailto: rsmf1944@gmail.com">Contact Us</a>
+    </footer>
+  </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Katha Jharna - 100 stories in Hindi</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- JS dependencies -->
     <script src="../../BookReader/jquery-1.10.1.js"></script>
@@ -14,866 +14,875 @@
     <script src="../../BookReader/jquery.colorbox-min.js"></script>
 
     <!-- BookReader and plugins -->
-    <link rel="stylesheet" href="../../BookReader/BookReader.css"/>
+    <link rel="stylesheet" href="../../BookReader/BookReader.css" />
     <script src="../../BookReader/BookReader.js"></script>
 
-	  <style>
-		  html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
-		  #BookReader { width: 100%; height: 98%; }
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #BookReader {
+        width: 100%;
+        height: 98%;
+      }
     </style>
-</head>
-<body>
-  <div id="BookReader">
-    Katha Jharna - 100 stories in Hindi<br/>
+  </head>
+  <body>
+    <div id="BookReader">
+      Katha Jharna - 100 stories in Hindi<br />
       <noscript>
-      <p>
-          The Book Reader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.
-      </p>
+        <p>
+          The Book Reader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that
+          it is enabled in the browser settings.
+        </p>
       </noscript>
-  </div>
+    </div>
 
-  <script type="text/javascript">
-  
-  function instantiateBookReader(selector, extraOptions) {
-  selector = selector || '#BookReader';
-  extraOptions = extraOptions || {};
-  var options = {
-    data: [
-      [
-        { width: 620, height: 826, uri: 'small(0).jpg' },
-	    { width: 620, height: 826, uri: 'hs000' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs000' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs000' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs000' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs001' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs001' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs001' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs001' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs002' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs002' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs002' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs002' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs003' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs003' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs003' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs003' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs004' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs004' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs004' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs004' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs005' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs005' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs005' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs005' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs006' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs006' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs006' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs006' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs007' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs007' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs007' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs007' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs008' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs008' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs008' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs008' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs009' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs009' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs009' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs009' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs010' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs010' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs010' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs010' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs011' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs011' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs011' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs011' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs012' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs012' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs012' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs012' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs013' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs013' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs013' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs013' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs014' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs014' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs014' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs014' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs015' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs015' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs015' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs015' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs016' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs016' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs016' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs016' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs017' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs017' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs017' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs017' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs018' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs018' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs018' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs018' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs019' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs019' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs019' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs019' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs020' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs020' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs020' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs020' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs021' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs021' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs021' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs021' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs022' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs022' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs022' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs022' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs023' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs023' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs023' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs023' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs024' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs024' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs024' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs024' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs025' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs025' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs025' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs025' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs026' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs026' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs026' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs026' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs027' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs027' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs027' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs027' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs028' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs028' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs028' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs028' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs029' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs029' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs029' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs029' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs030' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs030' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs030' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs030' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs031' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs031' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs031' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs031' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs032' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs032' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs032' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs032' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs033' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs033' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs033' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs033' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs034' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs034' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs034' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs034' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs035' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs035' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs035' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs035' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs036' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs036' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs036' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs036' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs037' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs037' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs037' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs037' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs038' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs038' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs038' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs038' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs039' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs039' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs039' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs039' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs040' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs040' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs040' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs040' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs041' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs041' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs041' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs041' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs042' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs042' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs042' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs042' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs043' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs043' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs043' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs043' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs044' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs044' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs044' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs044' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs045' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs045' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs045' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs045' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs046' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs046' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs046' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs046' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs047' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs047' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs047' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs047' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs048' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs048' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs048' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs048' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs049' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs049' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs049' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs049' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs050' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs050' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs050' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs050' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs051' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs051' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs051' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs051' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs052' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs052' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs052' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs052' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs053' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs053' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs053' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs053' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs054' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs054' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs054' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs054' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs055' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs055' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs055' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs055' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs056' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs056' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs056' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs056' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs057' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs057' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs057' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs057' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs058' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs058' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs058' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs058' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs059' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs059' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs059' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs059' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs060' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs060' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs060' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs060' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs061' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs061' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs061' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs061' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs062' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs062' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs062' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs062' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs063' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs063' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs063' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs063' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs064' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs064' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs064' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs064' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs065' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs065' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs065' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs065' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs066' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs066' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs066' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs066' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs067' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs067' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs067' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs067' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs068' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs068' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs068' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs068' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs069' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs069' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs069' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs069' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs070' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs070' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs070' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs070' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs071' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs071' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs071' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs071' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs072' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs072' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs072' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs072' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs073' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs073' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs073' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs073' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs074' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs074' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs074' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs074' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs075' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs075' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs075' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs075' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs076' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs076' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs076' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs076' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs077' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs077' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs077' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs077' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs078' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs078' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs078' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs078' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs079' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs079' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs079' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs079' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs080' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs080' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs080' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs080' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs081' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs081' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs081' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs081' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs082' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs082' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs082' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs082' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs083' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs083' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs083' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs083' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs084' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs084' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs084' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs084' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs085' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs085' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs085' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs085' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs086' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs086' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs086' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs086' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs087' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs087' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs087' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs087' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs088' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs088' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs088' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs088' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs089' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs089' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs089' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs089' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs090' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs090' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs090' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs090' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs091' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs091' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs091' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs091' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs092' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs092' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs092' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs092' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs093' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs093' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs093' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs093' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs094' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs094' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs094' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs094' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs095' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs095' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs095' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs095' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs096' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs096' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs096' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs096' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs097' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs097' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs097' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs097' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs098' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs098' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs098' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs098' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs099' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs099' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs099' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs099' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'hs100' + '/small(1).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs100' + '/small(2).jpg' },
-        { width: 620, height: 826, uri: 'hs100' + '/small(3).jpg' },
-      ],
-      [
-        { width: 620, height: 826, uri: 'hs100' + '/small(4).jpg' },
-	    { width: 620, height: 826, uri: 'small(0).jpg' },
-      ],
-    ],
+    <script type="text/javascript">
+      function instantiateBookReader(selector, extraOptions) {
+        selector = selector || "#BookReader";
+        extraOptions = extraOptions || {};
+        var options = {
+          data: [
+            [
+              { width: 620, height: 826, uri: "small(0).jpg" },
+              { width: 620, height: 826, uri: "hs000" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs000" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs000" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs000" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs001" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs001" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs001" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs001" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs002" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs002" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs002" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs002" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs003" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs003" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs003" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs003" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs004" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs004" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs004" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs004" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs005" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs005" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs005" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs005" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs006" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs006" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs006" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs006" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs007" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs007" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs007" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs007" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs008" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs008" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs008" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs008" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs009" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs009" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs009" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs009" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs010" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs010" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs010" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs010" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs011" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs011" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs011" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs011" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs012" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs012" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs012" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs012" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs013" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs013" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs013" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs013" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs014" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs014" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs014" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs014" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs015" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs015" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs015" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs015" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs016" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs016" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs016" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs016" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs017" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs017" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs017" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs017" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs018" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs018" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs018" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs018" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs019" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs019" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs019" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs019" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs020" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs020" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs020" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs020" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs021" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs021" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs021" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs021" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs022" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs022" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs022" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs022" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs023" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs023" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs023" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs023" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs024" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs024" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs024" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs024" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs025" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs025" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs025" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs025" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs026" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs026" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs026" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs026" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs027" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs027" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs027" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs027" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs028" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs028" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs028" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs028" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs029" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs029" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs029" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs029" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs030" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs030" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs030" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs030" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs031" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs031" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs031" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs031" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs032" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs032" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs032" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs032" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs033" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs033" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs033" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs033" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs034" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs034" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs034" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs034" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs035" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs035" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs035" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs035" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs036" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs036" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs036" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs036" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs037" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs037" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs037" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs037" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs038" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs038" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs038" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs038" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs039" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs039" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs039" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs039" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs040" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs040" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs040" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs040" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs041" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs041" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs041" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs041" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs042" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs042" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs042" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs042" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs043" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs043" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs043" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs043" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs044" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs044" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs044" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs044" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs045" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs045" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs045" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs045" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs046" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs046" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs046" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs046" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs047" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs047" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs047" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs047" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs048" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs048" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs048" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs048" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs049" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs049" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs049" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs049" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs050" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs050" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs050" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs050" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs051" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs051" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs051" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs051" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs052" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs052" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs052" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs052" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs053" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs053" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs053" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs053" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs054" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs054" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs054" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs054" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs055" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs055" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs055" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs055" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs056" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs056" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs056" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs056" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs057" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs057" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs057" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs057" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs058" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs058" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs058" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs058" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs059" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs059" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs059" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs059" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs060" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs060" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs060" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs060" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs061" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs061" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs061" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs061" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs062" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs062" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs062" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs062" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs063" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs063" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs063" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs063" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs064" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs064" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs064" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs064" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs065" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs065" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs065" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs065" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs066" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs066" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs066" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs066" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs067" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs067" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs067" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs067" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs068" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs068" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs068" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs068" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs069" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs069" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs069" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs069" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs070" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs070" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs070" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs070" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs071" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs071" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs071" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs071" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs072" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs072" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs072" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs072" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs073" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs073" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs073" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs073" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs074" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs074" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs074" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs074" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs075" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs075" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs075" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs075" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs076" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs076" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs076" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs076" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs077" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs077" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs077" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs077" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs078" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs078" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs078" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs078" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs079" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs079" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs079" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs079" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs080" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs080" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs080" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs080" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs081" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs081" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs081" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs081" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs082" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs082" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs082" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs082" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs083" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs083" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs083" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs083" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs084" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs084" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs084" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs084" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs085" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs085" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs085" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs085" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs086" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs086" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs086" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs086" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs087" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs087" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs087" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs087" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs088" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs088" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs088" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs088" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs089" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs089" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs089" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs089" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs090" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs090" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs090" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs090" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs091" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs091" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs091" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs091" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs092" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs092" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs092" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs092" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs093" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs093" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs093" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs093" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs094" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs094" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs094" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs094" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs095" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs095" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs095" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs095" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs096" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs096" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs096" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs096" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs097" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs097" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs097" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs097" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs098" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs098" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs098" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs098" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs099" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs099" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs099" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs099" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "hs100" + "/small(1).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs100" + "/small(2).jpg" },
+              { width: 620, height: 826, uri: "hs100" + "/small(3).jpg" },
+            ],
+            [
+              { width: 620, height: 826, uri: "hs100" + "/small(4).jpg" },
+              { width: 620, height: 826, uri: "small(0).jpg" },
+            ],
+          ],
 
-    // Override the path used to find UI images
-    imagesBaseURL: '../../BookReader/images/',
+          // Override the path used to find UI images
+          imagesBaseURL: "../../BookReader/images/",
 
-    ui: 'embed', // embed, full (responsive)
+          ui: "embed", // embed, full (responsive)
 
-	enableMobileNav: false,
-	
-    el: selector,
-	
+          enableMobileNav: false,
 
-  };
-  $.extend(options, extraOptions);
-  var br = new BookReader(options);
-  br.init();
-  }
+          el: selector,
+        };
+        $.extend(options, extraOptions);
+        var br = new BookReader(options);
+        br.init();
+      }
+    </script>
+    <script>
+      instantiateBookReader("#BookReader");
+    </script>
 
-  </script>
-  <script>
-  instantiateBookReader('#BookReader');
-  </script>
-    
-<footer>&copy; Copyright 2020. Rajalakshmi Srinivasan Memorial Foundation. <a href = "mailto: rsmf1944@gmail.com">Contact Us</a></footer>
-</body>
+    <footer>
+      &copy; Copyright 2020. Rajalakshmi Srinivasan Memorial Foundation.
+      <a href="mailto: rsmf1944@gmail.com">Contact Us</a>
+    </footer>
+  </body>
 </html>
