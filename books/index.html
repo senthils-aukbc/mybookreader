@@ -24,23 +24,23 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        /* font-size: 62.5%; */
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-          sans-serif;
       }
       #BookReader {
         width: 100%;
-        height: 98%;
+        height: 90%;
       }
     </style>
     <style>
       a {
+        color: inherit;
         text-decoration: none;
-        color: #2c8898;
+        border-bottom: 2px solid #ff7c5c;
+        font-weight: 600;
+        transition: 0.3s;
       }
       a:hover {
-        color: #982c61;
-        border-bottom: 2px solid #4a4a4a;
+        background-color: #ff7c5c;
+        color: #fff;
       }
     </style>
   </head>
@@ -70,6 +70,8 @@
 
       console.log(getQueryStringValue("storyid"));
       storyid = getQueryStringValue("storyid");
+      storyid_num = storyid.slice(2);
+      console.log(storyid_num);
       function instantiateBookReader(selector, extraOptions) {
         selector = selector || "#BookReader";
         extraOptions = extraOptions || {};
@@ -85,7 +87,7 @@
             ],
             [
               { width: 620, height: 826, uri: storyid + "/small(4).jpg" },
-              { width: 620, height: 826, uri: "small(0).jpg" },
+              // { width: 620, height: 826, uri: "small(0).jpg" },
             ],
           ],
 
@@ -105,6 +107,53 @@
     </script>
     <script>
       instantiateBookReader("#BookReader");
+    </script>
+
+    <table style="width: 100%">
+      <tr>
+        <th><div id="left_navigation" style="text-align: left"></div></th>
+        <th><div id="right_navigation" style="text-align: right"></div></th>
+      </tr>
+    </table>
+
+    <script>
+      function addNav() {
+        if (storyid_num == 000) {
+          var nav = document.getElementById("right_navigation");
+          var aTag = document.createElement("a");
+          var myLink = "index.html?storyid=hs001";
+          aTag.setAttribute("href", myLink);
+          aTag.setAttribute("align", "right");
+          aTag.innerText = "Next Story";
+          nav.appendChild(aTag);
+        } else if (storyid_num == 100) {
+          var nav = document.getElementById("left_navigation");
+          var aTag = document.createElement("a");
+          var myLink = "index.html?storyid=hs099";
+          aTag.setAttribute("href", myLink);
+          aTag.setAttribute("align", "left");
+          aTag.innerText = "Previous Story";
+          nav.appendChild(aTag);
+        } else {
+          var nav = document.getElementById("left_navigation");
+          var aTag = document.createElement("a");
+          var myLink = "index.html?storyid=hs" + ("000" + (Number(storyid_num) - 1)).substr(-3);
+          aTag.setAttribute("href", myLink);
+          aTag.setAttribute("align", "left");
+          aTag.innerText = "Previous Story";
+          nav.appendChild(aTag);
+
+          var nav = document.getElementById("right_navigation");
+          var bTag = document.createElement("a");
+          var myLink = "index.html?storyid=hs" + ("000" + (Number(storyid_num) + 1)).substr(-3);
+          bTag.setAttribute("href", myLink);
+          bTag.setAttribute("align", "right");
+          bTag.innerText = "Next Story";
+          nav.appendChild(bTag);
+        }
+      }
+
+      addNav();
     </script>
 
     <footer role="contentinfo">
