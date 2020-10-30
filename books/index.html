@@ -16,6 +16,8 @@
     <!-- BookReader and plugins -->
     <link rel="stylesheet" href="../../BookReader/BookReader.css" />
     <script src="../../BookReader/BookReader.js"></script>
+    <script type="text/javascript" src="../src/js/plugins/plugin.mobile_nav.js"></script>
+    <!-- <script type="text/javascript" src="../src/js/plugins/plugin.vendor-fullscreen.js"></script> -->
 
     <style>
       html,
@@ -93,10 +95,19 @@
             ],
           ],
 
-          bookTitle: 'Katha Jharna in Hindi',
-          bookUrl: '../index.html',
+          metadata: [
+            { label: "Title", value: "Katha Jharna - Hindi Stories" },
+            { label: "Author", value: "Rajalakshmi Srinivasan Memorial Foundation" },
+          ],
+
+          showToolbar: true,
+
+          //bookTitle: 'Katha Jharna - Hindi Stories',
+          bookUrl: "../about.html",
           //bookUrlText: 'Back to list of books',
           //bookUrlTitle: 'Katha Jharna in Hindi',
+
+          bookUrlMoreInfo: 'About Katha Jharna',
 
           // Override the path used to find UI images
           imagesBaseURL: "../../BookReader/images/",
