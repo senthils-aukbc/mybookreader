@@ -100,6 +100,28 @@
             { label: "Author", value: "Rajalakshmi Srinivasan Memorial Foundation" },
           ],
 
+          controls: {
+            onePage: {
+              label: "One-page view",
+              visible: true,
+              className: "onepg",
+            },
+            twoPage: {
+              label: "Two-page view",
+              visible: true,
+              className: "twopg",
+            },
+            thumbnail: {
+              label: "Thumbnail view",
+              visible: false,
+              className: "thumb",
+            },
+            viewmode: {
+              visible: false,
+              className: "viewmode",
+              excludedModes: [],
+            },
+          },
           showToolbar: true,
 
           //bookTitle: 'Katha Jharna - Hindi Stories',
@@ -107,7 +129,7 @@
           //bookUrlText: 'Back to list of books',
           //bookUrlTitle: 'Katha Jharna in Hindi',
 
-          bookUrlMoreInfo: 'About Katha Jharna',
+          bookUrlMoreInfo: "About Katha Jharna",
 
           // Override the path used to find UI images
           imagesBaseURL: "../../BookReader/images/",
